@@ -3,8 +3,10 @@ project(competitive_test)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(competitive_test src/dsu_test.cpp)
+add_executable(dsu_test src/dsu_test.cpp)
+target_link_libraries(dsu_test PRIVATE gtest gtest_main)
 
-target_link_libraries(competitive_test PRIVATE gtest gtest_main)
+add_executable(kmp_test src/kmp_test.cpp)
+target_link_libraries(kmp_test PRIVATE gtest gtest_main)
 
 set(CMAKE_BUILD_TYPE Debug)
