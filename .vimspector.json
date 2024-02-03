@@ -1,0 +1,32 @@
+{
+    "adapters": {
+        "lldb": {
+            "command": ["lldb-vscode-14"]
+        }
+    },
+    "configurations": {
+        "DSU": {
+            "adapter": "lldb",
+            "filetypes": [ "cpp" ],
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/test/build/dsu_test",
+                "cwd": ".",
+                "externalConsole": true,
+                "MIMode": "lldb"
+            }
+        },
+        "KMP": {
+            "adapter": "lldb",
+            "filetypes": [ "cpp" ],
+            "configuration": {
+                "request": "launch",
+                "program": "${workspaceRoot}/test/build/kmp_test",
+                "cwd": ".",
+                "externalConsole": true,
+                "MIMode": "lldb"
+            }
+        }
+
+    }
+}
