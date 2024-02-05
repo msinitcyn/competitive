@@ -5,23 +5,24 @@
         }
     },
     "configurations": {
-        "DSU": {
+        "AllTests": {
             "adapter": "lldb",
             "filetypes": [ "cpp" ],
             "configuration": {
                 "request": "launch",
-                "program": "${workspaceRoot}/test/build/dsu_test",
+                "program": "${workspaceRoot}/test/build/tests",
                 "cwd": ".",
                 "externalConsole": true,
                 "MIMode": "lldb"
             }
         },
-        "KMP": {
+        "FilteredTests": {
             "adapter": "lldb",
             "filetypes": [ "cpp" ],
             "configuration": {
                 "request": "launch",
-                "program": "${workspaceRoot}/test/build/kmp_test",
+                "program": "${workspaceRoot}/test/build/tests",
+                "args": ["--gtest_filter=*"],
                 "cwd": ".",
                 "externalConsole": true,
                 "MIMode": "lldb"

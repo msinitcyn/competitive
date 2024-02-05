@@ -22,8 +22,3 @@ TEST(KMP_Tests, FindTest) {
 
     EXPECT_EQ(6, actual);
 }
-
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

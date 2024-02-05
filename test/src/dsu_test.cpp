@@ -43,8 +43,3 @@ TEST(DSU_Tests, MultipleItemsTest) {
 
     EXPECT_EQ(dsu.find(4), dsu.find(2));
 }
-
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
