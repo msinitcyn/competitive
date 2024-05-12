@@ -22,7 +22,7 @@
             "configuration": {
                 "request": "launch",
                 "program": "${workspaceRoot}/test/build/tests",
-                "args": ["--gtest_filter=*"],
+                "args": ["--gtest_filter=*Fenwick*"],
                 "cwd": ".",
                 "externalConsole": true,
                 "MIMode": "lldb"
